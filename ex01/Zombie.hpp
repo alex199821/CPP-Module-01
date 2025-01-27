@@ -2,6 +2,8 @@
 #include <iomanip>
 #include <ios>
 #include <iostream>
+#include <sstream>
+#include <string>
 
 int		main(int argc, char **argv);
 
@@ -11,10 +13,10 @@ class Zombie
 	std::string name;
 
   public:
+	Zombie() : name(""){};
 	Zombie(std::string &name);
 	~Zombie();
 	void announce();
 };
 
-Zombie	*newZombie(std::string &name);
-void	randomChump(std::string name);
+Zombie	*zombieHorde(int N, std::string name);

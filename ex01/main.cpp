@@ -2,7 +2,7 @@
 
 void	leaks(void)
 {
-	system("leaks zombie");
+	system("leaks zombieHorde");
 }
 
 void Zombie::announce()
@@ -15,12 +15,10 @@ int	main(int argc, char **argv)
 	// atexit(leaks);
 	(void)argc;
 	(void)argv;
-	Zombie *zombie1;
-    
-	std::string name = "Sasha";
-	zombie1 = newZombie(name);
-	zombie1->announce();
-	randomChump("RandomChump");
+	Zombie *newZombieHorde;
 
-	delete zombie1;
+	std::string name = "HordeMember";
+
+	newZombieHorde=zombieHorde(3, name);
+	delete[] newZombieHorde;
 }
