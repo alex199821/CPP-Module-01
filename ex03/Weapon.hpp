@@ -21,4 +21,4 @@ public:
     void setType(std::string newType);
 };
 
-#endif // WEAPON_HPP
+#endif

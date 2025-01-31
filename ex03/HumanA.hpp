@@ -17,4 +17,4 @@ public:
     void attack();
 };
 
-#endif // HUMANA_HPP
+#endif
