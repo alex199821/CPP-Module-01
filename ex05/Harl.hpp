@@ -5,7 +5,7 @@
 #include <sstream>
 #include <string>
 
-int	main(int argc, char **argv);
+int	main(void);
 
 class Harl
 {
