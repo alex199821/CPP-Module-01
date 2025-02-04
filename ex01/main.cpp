@@ -17,8 +17,12 @@ int	main(int argc, char **argv)
 	(void)argv;
 	Zombie *newZombieHorde;
 
+	int hordeSize = 5;
 	std::string name = "HordeMember";
 
-	newZombieHorde=zombieHorde(3, name);
+	newZombieHorde = zombieHorde(hordeSize, name);
+	for (int i = 0; i < hordeSize; ++i)
+		newZombieHorde[i].announce();
 	delete[] newZombieHorde;
+	return (0);
 }

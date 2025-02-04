@@ -1,4 +1,0 @@
-program a program that takes three parameters in & the following program order: a filename and
-two strings, s1 and s2.
-It will open the file <filename> and copies its content into a new file
-<filename>.program, replacing every occurrence of s1 with s2. program

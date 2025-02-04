@@ -28,5 +28,9 @@ int	main(int argc, char **argv)
 		club.setType("some other type of club");
 		jim.attack();
 	}
+	{
+		HumanB jim("Jim");
+		jim.attack();
+	}
 	return (0);
 }

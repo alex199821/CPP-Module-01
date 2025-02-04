@@ -1,13 +1,13 @@
 #include <iostream>
 
-void	leaks(void)
-{
-	system("leaks hiBrain");
-}
+// void	leaks(void)
+// {
+// 	system("leaks hiBrain");
+// }
 
 int	main(int argc, char **argv)
 {
-	atexit(leaks);
+	// atexit(leaks);
 	(void)argc;
 	(void)argv;
 	std::string string = "HI THIS IS BRAIN";
