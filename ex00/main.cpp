@@ -5,7 +5,7 @@ void	leaks(void)
 	system("leaks zombie");
 }
 
-void Zombie::announce()
+void Zombie::announce(void)
 {
 	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
@@ -16,7 +16,7 @@ int	main(int argc, char **argv)
 	(void)argc;
 	(void)argv;
 	Zombie *zombie1;
-    
+
 	std::string name = "Sasha";
 	zombie1 = newZombie(name);
 	zombie1->announce();
