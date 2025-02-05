@@ -5,11 +5,6 @@ void	leaks(void)
 	system("leaks zombieHorde");
 }
 
-void Zombie::announce()
-{
-	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-}
-
 int	main(int argc, char **argv)
 {
 	// atexit(leaks);
@@ -18,7 +13,7 @@ int	main(int argc, char **argv)
 	Zombie *newZombieHorde;
 
 	int hordeSize = 5;
-	std::string name = "HordeMember";
+	std::string name = "HordeMemberBoo";
 
 	newZombieHorde = zombieHorde(hordeSize, name);
 	for (int i = 0; i < hordeSize; ++i)
